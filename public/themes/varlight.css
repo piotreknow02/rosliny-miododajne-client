@@ -1,0 +1,8 @@
+:root
+{
+    --primary-color: #127e36;
+    --secondary-color: #749e85;
+    --bg-color: #ebebeb;
+    --text-color: #292929;
+    --gradient: inear-gradient( 102.1deg,  #60dd8e 0%, #188a8d 100% );
+}
