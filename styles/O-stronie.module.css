@@ -1,5 +1,6 @@
 .main
 {
-    color: var(--primary-color);
+    color: var(--text-color);
     font-size: 100%;
+    padding: 4vmin;
 }
