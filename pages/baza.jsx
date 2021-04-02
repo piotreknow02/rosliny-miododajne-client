@@ -1,4 +1,4 @@
-
+import styles from '../styles/Baza.module.css'
 
 export default function Home({children})
 {

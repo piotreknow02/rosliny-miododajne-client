@@ -2,12 +2,13 @@ import Head from 'next/head'
 import { useState } from 'react';
 
 import NavLink from './NavLink';
-import styles from'../styles/Navbar.module.css';
+import styles from '../styles/Navbar.module.css';
 
 export default function Navbar(props)
 {
     const [isDark, setIsDark] = useState(false);
     return(
+        <>
         <nav className={styles.nav}>
             <Head>
                 {/* Font Awesome */}
@@ -19,7 +20,12 @@ export default function Navbar(props)
                 {/* Styles */}
                 <link rel="stylesheet" href={isDark ? "/themes/vardark.css" : "/themes/varlight.css"}/>
                 {/* Meta tags */}
-                
+                <meta name="title" content="Rosliny miododajne"/>
+                <meta property="description" content="Baza roslin miododajnych"/>
+                <meta property="twitter:title" content="Rosliny miododajne"/>
+                <meta property="title:description" content="Baza roslin miododajnych"/>
+                <meta property="og:description" content="Baza roslin miododajnych"/>
+                <meta property="og:title" content="Rosliny"/>
             </Head>
             <ul>
                 <NavLink href="."><h1>Rosliny miododajne</h1></NavLink>
@@ -33,5 +39,7 @@ export default function Navbar(props)
                 </li>
             </ul>
         </nav> 
+        <div className={styles.spacer}></div>
+        </>
     );
 }

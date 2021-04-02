@@ -4,6 +4,7 @@
     position: fixed;
     top: 0px;
     width: 98%;
+    height: 7vh;
     padding: 2vmin;
     border-radius: 0px 0px 15px 15px;
 }
@@ -24,4 +25,8 @@
     border-radius: 9000px;
     border: 5px solid var(--bg-color);
     padding: 5px;
+}
+.spacer
+{
+    height: 7vh;
 }
