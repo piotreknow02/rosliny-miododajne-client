@@ -20,12 +20,20 @@ export default function Navbar(props)
                 {/* Styles */}
                 <link rel="stylesheet" href={isDark ? "/themes/vardark.css" : "/themes/varlight.css"}/>
                 {/* Meta tags */}
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width,initial-scale=1"/>
+                <meta name="theme-color" content={isDark ? "#222" : "#eee"}/>
                 <meta name="title" content="Rosliny miododajne"/>
                 <meta property="description" content="Baza roslin miododajnych"/>
                 <meta property="twitter:title" content="Rosliny miododajne"/>
                 <meta property="title:description" content="Baza roslin miododajnych"/>
                 <meta property="og:description" content="Baza roslin miododajnych"/>
                 <meta property="og:title" content="Rosliny"/>
+                <meta property="og:image" content="/favicon.ico"/>
+                <meta property="twitter:image" content="/favicon.ico"/>
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="shortcut icon" content="/favicon.ico"/>
+                <meta property="apple icon" content="/favicon.ico"/>
             </Head>
             <ul>
                 <NavLink href="."><h1>Rosliny miododajne</h1></NavLink>
