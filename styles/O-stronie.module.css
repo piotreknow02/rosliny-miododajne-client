@@ -4,3 +4,22 @@
     font-size: 100%;
     padding: 4vmin;
 }
+
+.akapit
+{
+    font-size: 110%;
+}
+
+.ikona
+{
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
+    font-size: 15vmin;
+    float: right;
+    margin: 3vmin; 
+}
