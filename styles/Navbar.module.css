@@ -1,6 +1,6 @@
 .nav
 {
-    background-color: var(--primary-color);
+    background-image: var(--gradient);
     position: fixed;
     top: 0px;
     width: 98%;
@@ -15,9 +15,7 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
-}
-.nav > ul
-{
+    font-size: 3.5vmin;
     color: var(--bg-color);
 }
 .themebtn
@@ -25,6 +23,8 @@
     border-radius: 9000px;
     border: 5px solid var(--bg-color);
     padding: 5px;
+    display: grid;
+    place-items: center;
 }
 .spacer
 {
