@@ -7,7 +7,7 @@ export default function SqlForm()
         <fieldset className={styles.main}>
             <legend>SQL</legend>
             <form action="" method="post">
-                <textarea name="q" cols="30" rows="10" onChange={(e) => {if (securityPattern.test(e.target.value)) alert("Nawet nie próbuj")}}></textarea>
+                <textarea name="q" cols="100" rows="10" onChange={(e) => {if (securityPattern.test(e.target.value)) alert("Nawet nie próbuj")}}></textarea>
                 <input type="submit" value="Wykonaj"/>
             </form>
         </fieldset>
