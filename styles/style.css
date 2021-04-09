@@ -5,7 +5,13 @@
     margin: 0px;
     padding: 0px;
 }
-html, body, input
+html, body
+{
+    font-family: 'Fredoka One', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+input
 {
     font-family: 'The Naturel Txt', sans-serif;
     background-color: var(--bg-color);
