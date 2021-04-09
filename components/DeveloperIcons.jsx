@@ -14,8 +14,8 @@ export default function DeveloperIcons() {
     return (
         <fieldset className={styles.main}>
             <legend>Autorzy strony</legend>
-            {devicons.map(i =>
-                <a href={"https://github.com/" + i.username}>
+            {devicons.map((i, key) =>
+                <a key={key} href={"https://github.com/" + i.username}>
                     <div className={styles.devicon} title={i.username}>
                         <img src={i.photo} alt={i.username}/>
                     </div>
