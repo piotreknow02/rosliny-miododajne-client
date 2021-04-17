@@ -1,0 +1,40 @@
+.main
+{
+    border: 2px dashed var(--primary-color);
+    margin: 3vmin;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.main > legend
+{
+    margin: 0px 50px;
+    color: var(--primary-color);
+}
+.main > form
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vmin;
+}
+.main > form > textarea
+{
+    background-color: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    resize: none;
+    width: 50vw;
+    /* float: left; */
+}
+.main > form > input[type=submit]
+{
+    background-image: var(--gradient);
+    color: var(--bg-color);
+    font-size: 5vmin;
+    padding: 7vmin;
+    border-radius: 100000px;
+    border: 0px solid transparent;
+    /* float: right; */
+}
