@@ -1,4 +1,5 @@
-import styles from "../styles/SocialmediaIcons.module.css";
+import * as React from "react"
+import * as styles from "../styles/SocialmediaIcons.module.css"
 
 export default function SocialmediaIcons()
 {

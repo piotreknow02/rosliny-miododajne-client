@@ -1,4 +1,5 @@
-import styles from "../styles/SqlForm.module.css";
+import * as React from "react"
+import * as styles from "../styles/SqlForm.module.css"
 
 export default function SqlForm()
 {

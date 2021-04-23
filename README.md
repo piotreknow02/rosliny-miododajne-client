@@ -2,7 +2,7 @@
 
 ---
 
-### Aplikacja internetowa roďż˝lin miododajnych zrobiona na Next JS
+### Aplikacja internetowa roďż˝lin miododajnych zrobiona na Gatsby JS
 
 Aby uruchomiďż˝ potrzebujesz [`nodejs`]("https://nodejs.org")
 
@@ -13,7 +13,7 @@ Aby uruchomiďż˝ potrzebujesz [`nodejs`]("https://nodejs.org")
 Aby uruchmiďż˝ lokalnie wpisz:
 
 ```bash
-npm run dev
+gatsby develop
 ```
 
 

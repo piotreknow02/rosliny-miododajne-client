@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import styles from '../styles/NavLink.module.css';
+import * as React from "react"
+import { useState } from 'react'
+import * as styles from '../styles/NavLink.module.css'
 
 export default function NavLink(props)
 {

@@ -1,17 +1,18 @@
-import Head from 'next/head'
-import { useState } from 'react';
+import * as React from "react"
+import { useState } from 'react'
 
 import NavLink from './NavLink';
-import styles from '../styles/Navbar.module.css';
+import * as styles from '../styles/Navbar.module.css'
+import { Helmet } from "react-helmet";
 
 export default function Navbar(props)
 {
-    const [isDark, setIsDark] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isDark, setIsDark] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
     return(
         <>
             <nav className={isOpen ? styles.nav + " " + styles.navopen : styles.nav} onLoad={() => setIsDark(localStorage.getItem("isDark") | matchMedia("(prefers-color-scheme: dark)") | false)}>
-                <Head>
+                <Helmet>
                     {/* Font Awesome */}
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossOrigin="anonymous" />
                     {/* Fonts */}
@@ -19,7 +20,7 @@ export default function Navbar(props)
                     <link rel="preconnect" href="https://fonts.gstatic.com"/>
                     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster+Two&display=swap" rel="stylesheet"/>
                     {/* Styles */}
-                    <link rel="stylesheet" href={isDark ? "/themes/vardark.css" : "/themes/varlight.css"}/>
+                    <link rel="stylesheet" href={isDark ? "../themes/vardark.css" : "../themes/varlight.css"}/>
                     {/* Meta tags */}
                     <meta charSet="utf-8"/>
                     <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -35,7 +36,7 @@ export default function Navbar(props)
                     <meta property="twitter:card" content="summary_large_image"/>
                     <meta property="shortcut icon" content="/favicon.ico"/>
                     <meta property="apple icon" content="/favicon.ico"/>
-                </Head>
+                </Helmet>
                 <div className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
                     <div className={styles.line}></div>
                     <div className={styles.line}></div>
@@ -52,8 +53,8 @@ export default function Navbar(props)
                         </div>
                     </li>
                 </ul>
-            </nav> 
+            </nav>
             <div className={styles.spacer}></div>
         </>
-    );
+    )
 }
