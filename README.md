@@ -1,16 +1,16 @@
-# Rosliny
+# Ro�liny
 
 ---
 
-### Aplikacja internetowa roďż˝lin miododajnych zrobiona na Gatsby JS
+### Aplikacja internetowa ro�lin miododajnych zrobiona na Gatsby JS
 
-Aby uruchomiďż˝ potrzebujesz [`nodejs`]("https://nodejs.org")
+Aby uruchomi� potrzebujesz [`nodejs`]("https://nodejs.org")
 
 ---
 
 ## Uruchamianie lokalnie
 
-Aby uruchmiďż˝ lokalnie wpisz:
+Aby uruchmi� lokalnie wpisz:
 
 ```bash
 gatsby develop
