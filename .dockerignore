@@ -3,3 +3,7 @@ node_modules/
 .gitignore
 package-lock.json
 README.md
+.prettierrc
+.prettierignore
+public/
+.cache/
