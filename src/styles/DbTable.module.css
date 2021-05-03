@@ -1,0 +1,22 @@
+.tab
+{
+    margin: 10vmin;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+.tab > tbody > tr > td
+{
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    padding: 0.5vmax;
+    text-align: center;
+}
+.head
+{
+    font-size: 5vmax;
+}
+.tab > tbody > tr > td > img
+{
+    border-radius: 10px;
+}

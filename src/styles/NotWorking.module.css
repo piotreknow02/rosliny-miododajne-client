@@ -1,0 +1,28 @@
+.bg
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    transform: translateY(-10vh);
+    place-items: center;
+}
+.container
+{
+    padding: 5vmin;
+    background-image: var(--gradient);
+    border-radius: 3vmin;
+}
+.container > *
+{
+    font-family: 'The Naturel Txt', sans-serif;
+}
+.container span
+{
+    font-size: 3vmin;
+}
+.container a
+{
+    font-size: larger;
+    text-decoration: underline;
+}
