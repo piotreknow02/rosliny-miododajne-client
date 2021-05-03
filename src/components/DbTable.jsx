@@ -11,7 +11,8 @@ export default function DbTable() {
         request.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 setPlants(JSON.parse(this.responseText));
-            } else if (this.status !== 200) {
+            }
+             else if (this.status !== 200) {
                 window.location = "./not-working"
             }
         }

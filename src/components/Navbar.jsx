@@ -43,10 +43,10 @@ export default function Navbar(props)
                     <div className={styles.line}></div>
                 </div>
                 <ul className={isOpen ? styles.open : styles.close}>
-                    <NavLink href="."><h1>Rosliny miododajne</h1></NavLink>
-                    <NavLink href="o-stronie"><h3>O stronie</h3></NavLink>
-                    <NavLink href="baza"><h3>Baza</h3></NavLink>
-                    <NavLink href="sql"><h3>Edytor SQL</h3></NavLink>
+                    <NavLink href="/"><h1>Rosliny miododajne</h1></NavLink>
+                    <NavLink href="/o-stronie"><h3>O stronie</h3></NavLink>
+                    <NavLink href="/baza"><h3>Baza</h3></NavLink>
+                    <NavLink href="/sql"><h3>Edytor SQL</h3></NavLink>
                     <li>
                         <div className={styles.themebtn} onClick={() => {setIsDark(!isDark); localStorage.setItem("isDark", !isDark)}}>
                             <i className={isDark ? "fas fa-sun": "fas fa-moon"}></i>

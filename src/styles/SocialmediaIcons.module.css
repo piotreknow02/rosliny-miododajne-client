@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-right: 3vmin;
 }
 .icon
 {
@@ -14,7 +15,8 @@
     -moz-text-fill-color: transparent;
     background-clip: text;
     /* text-fill-color: transparent;  */
-    font-size: 15vmin;
+    font-size: 6vmin;
     float: right;
-    margin: 3vmin; 
+    margin: 0px 1.5vmin;
 }
+
