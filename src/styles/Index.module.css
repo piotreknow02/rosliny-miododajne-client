@@ -1,0 +1,72 @@
+.logo
+{
+    height: 20vh;
+}
+.title
+{
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 5vh;
+}
+.title + h5
+{
+    display: inline;
+    margin: 1vmin;
+    font-size: 2vh;
+    background-color: var(--bg-color);
+    border-radius: 90000000px;
+    padding: 5px;
+}
+.titlecontainer
+{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 2vh;
+    height: 50vh;
+    background-blend-mode: darken;
+    background-color: #0000007a;
+    background-image: url("https://images.pexels.com/photos/63641/bee-in-the-approach-bee-apis-pollen-63641.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.featurescontainer
+{
+    background-color: var(--secondary-color);
+    padding: 4vmax;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    row-gap: 5vh;
+    column-gap: 5vw;
+    justify-items: center;
+}
+.buttoncontainer
+{
+    height: 30vh;
+    display: grid;
+    place-items: center;
+    background-image: var(--gradient);
+}
+.buttoncontainer > a
+{
+    padding: 3vmin;
+    background-color: var(--bg-color);
+    border-radius: 9000000px;
+    font-size: 2vw;
+}
+.buttoncontainer > a > span
+{
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+}

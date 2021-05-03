@@ -1,0 +1,26 @@
+.container
+{
+    margin: 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featurebox
+{
+    width: 120px;
+    height: 120px;
+    background-color: var(--bg-color);
+    padding: 3vmax;
+    border-radius: 9000000px;
+    box-shadow: 15px 15px 20px #00000059;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.featurebox > i
+{
+    margin: 20px;
+}
