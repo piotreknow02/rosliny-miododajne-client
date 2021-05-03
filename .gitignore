@@ -36,6 +36,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Package lock
+package-lock.json
+
 # Typescript v1 declaration files
 typings/
 
@@ -68,3 +71,4 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 .DS_Store
+package-lock.json
