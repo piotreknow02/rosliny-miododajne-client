@@ -13,7 +13,7 @@ export default function DbTable() {
                 setPlants(JSON.parse(this.responseText));
             }
              else if (this.status !== 200) {
-                window.location = "./not-working"
+                window.location = "/not-working"
             }
         }
         request.send()
