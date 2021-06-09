@@ -1,0 +1,18 @@
+.container
+{
+    width: 20vmin;
+    height: 20vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.img
+{
+    width: 20vmin;
+}
+.img:hover
+{
+    width: 30vmin;
+}

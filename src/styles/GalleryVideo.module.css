@@ -1,0 +1,13 @@
+.container
+{
+    width: 20vmin;
+    height: 20vmin;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.video
+{
+    width: 20vmin;
+}

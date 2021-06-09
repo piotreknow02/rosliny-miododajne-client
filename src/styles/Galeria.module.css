@@ -1,0 +1,10 @@
+.gallery
+{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 5vh;
+    column-gap: 5vw;
+    justify-items: center;
+}

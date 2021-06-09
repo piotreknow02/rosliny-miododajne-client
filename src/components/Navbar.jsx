@@ -46,6 +46,7 @@ export default function Navbar(props)
                     <NavLink href="/"><h1>Rosliny miododajne</h1></NavLink>
                     <NavLink href="/o-stronie"><h3>O stronie</h3></NavLink>
                     <NavLink href="/baza"><h3>Baza</h3></NavLink>
+                    <NavLink href="/galeria"><h3>Galeria</h3></NavLink>
                     <NavLink href="/sql"><h3>Edytor SQL</h3></NavLink>
                     <li>
                         <div className={styles.themebtn} onClick={() => {setIsDark(!isDark); localStorage.setItem("isDark", !isDark)}}>
