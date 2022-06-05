@@ -12,9 +12,9 @@ export default function DbTable() {
             if (this.readyState == 4 && this.status == 200) {
                 setPlants(JSON.parse(this.responseText));
             }
-             else if (this.status !== 200) {
-                window.location = "/not-working"
-            }
+            //  else if (this.status !== 200) {
+            //     window.location = "/not-working"
+            // }
         }
         request.send()
     });
@@ -24,7 +24,7 @@ export default function DbTable() {
             <table className={styles.tab}>
                 <tbody>
                     <tr><td>Nazwa</td><td>Nazwa łacińska</td><td>Kraj</td><td>Wydajność miodowa</td><td>Wydajność pyłkowa</td><td>Kategoria</td><td>Zdjęcie</td></tr>
-                    {plants.map((p, i) => <tr key={i}><td>{p.Nazwa}</td><td>{p.Nazwa_lacinska}</td><td>{p.Kraj}</td><td>{p.Wydajnosc_miodowa}</td><td>{p.Wydajnosc_pylkowa}</td><td>{p.Kategoria}</td><td>{parse(p.Zdjecie)}</td></tr>)}
+                    {plants.map((p, i) => <tr key={i}><td>{p.Nazwa}</td><td>{p.Nazwa_lacinska}</td><td>{p.Kraj}</td><td>{p.Wydajnosc_miodowa}</td><td>{p.Wydajnosc_pylkowa}</td><td>{p.Kategoria}</td><td><img src={`/plants/${p.Zdjecie}`}></img></td></tr>)}
                 </tbody>
             </table>
         </>

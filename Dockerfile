@@ -6,7 +6,9 @@ ADD . /home/rosliny
 RUN npm install -g --update npm
 RUN npm install -g gatsby-cli
 RUN npm install
-CMD ["sh", "-c", "gatsby develop"]
+RUN python3 gallery.py
+RUN gatsby build
+CMD ["gatsby", "serve", "--port", "8888"]
 
 # docker build -t rosliny-client .
-# docker run -p 3000:3000 rosliny-client
+# docker run -p 8888:8888 rosliny-client
