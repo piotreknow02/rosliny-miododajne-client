@@ -11,6 +11,10 @@ export default function DeveloperIcons() {
     {
         username: "OreoPL-Studio",
         photo: "https://avatars.githubusercontent.com/u/81591050",
+    }, 
+    {
+        username: "n00sek",
+        photo: "https://avatars.githubusercontent.com/u/74304320",
     }
     ]
     return (
